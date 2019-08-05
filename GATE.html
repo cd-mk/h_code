@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Expires" content="-1">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta id="_csrf" name="_csrf" th:content="${_csrf.token}">
+    <meta id="_csrf_header" name="_csrf_header" th:content="${_csrf.headerName}">
+    <title>H패션몰/H편집샵 제안</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="hcode/assets/css/reset.css">
+    <link rel="stylesheet" href="hcode/assets/css/pc.css">
+
+    <script type="text/javascript">
+        function TypeA(popHeight, popWidth) {
+            var winHeight = document.body.clientHeight;	// 현재창의 높이
+            var winWidth = document.body.clientWidth;	// 현재창의 너비
+            var winX = window.screenLeft;	// 현재창의 x좌표
+            var winY = window.screenTop;	// 현재창의 y좌표
+
+            var popX = winX + (winWidth - popWidth) / 2;
+            var popY = winY + (winHeight - popHeight) / 2;
+            window.open("TypeA/TypeA-main.html", "TypeA", "width=" + popWidth + "px,height=" + popHeight + "px,top=" + popY + ",left=" + popX);
+        }
+
+
+
+        function Hcode(popHeight, popWidth) {
+            var winHeight = document.body.clientHeight;	// 현재창의 높이
+            var winWidth = document.body.clientWidth;	// 현재창의 너비
+            var winX = window.screenLeft;	// 현재창의 x좌표
+            var winY = window.screenTop;	// 현재창의 y좌표
+
+            var popX = winX + (winWidth - popWidth) / 2;
+            var popY = winY + (winHeight - popHeight) / 2;
+            window.open("hcode/mobile-main.html", "Hcode", "width=" + popWidth + "px,height=" + popHeight + "px,top=" + popY + ",left=" + popX);
+        }
+    </script>
+    <style>
+    h1 {font-family:'Noto Sans KR';font-weight: 700;font-size: 40px;padding:100px 0 50px 0;text-align: center}
+    </style>
+    
+
+</head>
+
+<body>
+
+    <!-- wrap -->
+    <div id="wrap" class="main">
+        <h1>H패션몰/ H편집샵 제안</h1>
+        <div style="text-align: center;position: absolute;left: 50%;transform: translate(-50%);margin-top:60px;">
+            <img src="hcode/assets/image/pc/gate.png" alt="" usemap="#link">
+        </div>
+
+        <map id="link" name="link">
+            <area shape="rect" alt="" title="" coords="75,280,149,385" href="Hfashionmall/TypeA/" target="_blank" />
+            <area shape="rect" alt="" title="" coords="169,280,245,385" href="#" target="" onclick="TypeA(700,375)"  />
+
+            <area shape="rect" alt="" title="" coords="393,280,470,385" href="Hfashionmall/TypeB/" target="_blank" />
+
+
+            <area shape="rect" alt="" title="" coords="738,280,814,385" href="hcode/pc-main.html" target="_blank" />
+            <area shape="rect" alt="" title="" coords="832,280,907,385" href="#" target="" onclick="Hcode(700,375)" />
+        </map>
+
+
+
+    </div>
+    <!--// wrap -->
+
+
+
+</body>
+
+</html>
